@@ -6,6 +6,7 @@ specifiers:
   '@vanilla-extract/css': ^1.7.2
   '@vanilla-extract/vite-plugin': ^3.3.0
   '@vitejs/plugin-react': ^2.0.0
+  minireset.css: ^0.0.7
   prettier: 2.7.1
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -15,6 +16,7 @@ specifiers:
 dependencies:
   '@vanilla-extract/css': 1.7.2
   '@vanilla-extract/vite-plugin': 3.3.0_vite@3.0.4
+  minireset.css: 0.0.7
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -868,6 +870,10 @@ packages:
     resolution: {integrity: sha512-1N4qp+jE0pL5Xv4uEcwVUhIkwdUO3S/9gML90nqKA7v7FcOS5vUtatfzok9S9U1EJU8dHWlcv95WLnKmmxZI9w==}
     dependencies:
       '@babel/runtime': 7.18.9
+    dev: false
+
+  /minireset.css/0.0.7:
+    resolution: {integrity: sha512-raWKK2aHP/MI4Yu72dU6hade1YFuoyDQtSUi/FiIZfeRHjgL81uN/nFvG2aoAr+mseRc3jpg47jQqx1/+6w+kQ==}
     dev: false
 
   /ms/2.1.2:
