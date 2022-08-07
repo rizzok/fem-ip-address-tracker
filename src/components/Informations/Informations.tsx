@@ -1,6 +1,8 @@
+import { informationsCss } from './Informations.css'
+
 export const Informations = () => {
   return (
-    <section>
+    <section className={informationsCss}>
       <div>
         <p>Ip address</p>
         <p>192.212.174.101</p>

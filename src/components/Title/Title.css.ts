@@ -3,6 +3,8 @@ import { vars } from '../../style.css'
 
 export const title = style({
   fontFamily: vars.font.family,
-  fontSize: vars.font.size,
-  // fontWeight: vars.font.weight,
+  fontSize: '22px',
+  fontWeight: vars.font.weight.medium,
+  color: 'white',
+  margin: '1rem 0',
 })

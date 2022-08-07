@@ -1,4 +1,4 @@
-import { createGlobalTheme } from '@vanilla-extract/css'
+import { createGlobalTheme, globalStyle } from '@vanilla-extract/css'
 
 export const vars = createGlobalTheme(':root', {
   minWidth: {
@@ -17,4 +17,18 @@ export const vars = createGlobalTheme(':root', {
       bold: '700',
     },
   },
+})
+
+globalStyle('html, body, #root', {
+  height: '100%',
+  minWidth: vars.minWidth.mobile,
+})
+
+globalStyle('body', {
+  fontFamily: vars.font.family,
+})
+
+globalStyle('#root', {
+  display: 'flex',
+  flexDirection: 'column',
 })
