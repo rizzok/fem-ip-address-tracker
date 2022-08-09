@@ -1,6 +1,7 @@
 import { informationsCss } from './Informations.css'
 import { useEffect, useState } from 'react'
 import { apikey } from '../../data/apikey'
+/*
 
 export const Informations = () => {
   const [error, setError] = useState(null)
@@ -52,4 +53,28 @@ export const Informations = () => {
       </section>
     )
   }
+}
+*/
+
+export const Informations = () => {
+  return (
+    <section className={informationsCss}>
+      <div>
+        <p>Ip address</p>
+        <p>192.212.174.034</p>
+      </div>
+      <div>
+        <p>Location</p>
+        <p>Brooklyn, NY 10001</p>
+      </div>
+      <div>
+        <p>Timezone</p>
+        <p>UTC -5:00</p>
+      </div>
+      <div>
+        <p>ISP</p>
+        <p>SpaceX Starlink</p>
+      </div>
+    </section>
+  )
 }

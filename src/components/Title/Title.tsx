@@ -1,10 +1,10 @@
 import { ReactNode } from 'react'
-import { title } from './Title.css'
+import { titleCss } from './Title.css'
 
 interface Props {
   children?: ReactNode
 }
 
 export const Title = ({ children }: Props) => {
-  return <h1 className={title}>{children}</h1>
+  return <h1 className={titleCss}>{children}</h1>
 }

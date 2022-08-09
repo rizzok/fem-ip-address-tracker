@@ -11,7 +11,7 @@ export const SearchBar = () => {
         placeholder="Search for any IP address or domain"
       />
       <button type="submit" className={buttonCss}>
-        {'>'}
+        <img src="/src/assets/images/icon-arrow.svg" alt="icon-arrow" />
       </button>
     </form>
   )

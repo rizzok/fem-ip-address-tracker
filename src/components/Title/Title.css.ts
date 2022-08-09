@@ -1,10 +1,11 @@
 import { style } from '@vanilla-extract/css'
 import { vars } from '../../style.css'
 
-export const title = style({
+export const titleCss = style({
   fontFamily: vars.font.family,
-  fontSize: '22px',
+  fontSize: '26px',
   fontWeight: vars.font.weight.medium,
+  textAlign: 'center',
   color: 'white',
-  margin: '1rem 0',
+  margin: '1.5rem 0',
 })
