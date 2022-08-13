@@ -10,8 +10,8 @@ const App = () => {
       <Header>
         <Title>IP Address Tracker</Title>
         <SearchBar />
+        <Informations />
       </Header>
-      <Informations />
       <Map />
     </>
   )

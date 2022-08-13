@@ -1,4 +1,9 @@
-import { informationsCss } from './Informations.css'
+import {
+  infoDiv,
+  infoLabel,
+  informationsCss,
+  infoValue,
+} from './Informations.css'
 import { useEffect, useState } from 'react'
 import { apikey } from '../../data/apikey'
 /*
@@ -59,21 +64,21 @@ export const Informations = () => {
 export const Informations = () => {
   return (
     <section className={informationsCss}>
-      <div>
-        <p>Ip address</p>
-        <p>192.212.174.034</p>
+      <div className={infoDiv}>
+        <p className={infoLabel}>Ip address</p>
+        <p className={infoValue}>192.212.174.034</p>
       </div>
-      <div>
-        <p>Location</p>
-        <p>Brooklyn, NY 10001</p>
+      <div className={infoDiv}>
+        <p className={infoLabel}>Location</p>
+        <p className={infoValue}>Brooklyn, NY 10001</p>
       </div>
-      <div>
-        <p>Timezone</p>
-        <p>UTC -5:00</p>
+      <div className={infoDiv}>
+        <p className={infoLabel}>Timezone</p>
+        <p className={infoValue}>UTC -5:00</p>
       </div>
-      <div>
-        <p>ISP</p>
-        <p>SpaceX Starlink</p>
+      <div className={infoDiv}>
+        <p className={infoLabel}>ISP</p>
+        <p className={infoValue}>SpaceX Starlink</p>
       </div>
     </section>
   )
