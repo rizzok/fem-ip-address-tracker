@@ -31,7 +31,12 @@ const LocationMarker = () => {
 
 export const Map = () => {
   return (
-    <MapContainer center={[50.5, 30.5]} zoom={13} className={mapContainer}>
+    <MapContainer
+      center={[50.5, 30.5]}
+      zoom={13}
+      className={mapContainer}
+      zoomControl={false}
+    >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
