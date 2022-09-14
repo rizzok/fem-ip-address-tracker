@@ -2,6 +2,7 @@ import 'leaflet/dist/leaflet.css'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import { mapContainer } from './Map.css'
 import { useEffect, useState } from 'react'
+import iconLocation from '../../assets/images/icon-location.svg'
 
 interface Coordinates {
   lat: number
