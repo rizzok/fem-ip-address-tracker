@@ -1,4 +1,5 @@
 import 'leaflet/dist/leaflet.css'
+import Leaflet from 'leaflet'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import { mapContainer } from './Map.css'
 import { useEffect, useState } from 'react'
@@ -9,10 +10,18 @@ interface Coordinates {
   lng: number
 }
 
+const newIcon = new Leaflet.Icon({
+  iconUrl: iconLocation,
+  iconAnchor: [5, 55],
+  popupAnchor: [10, -44],
+  iconSize: [50, 60],
+})
+
 const LocationMarker = () => {
   const [position, setPosition] = useState<Coordinates | null>(null)
 
   const map = useMap()
+  console.log(map)
 
   useEffect(() => {
     map.locate().on('locationfound', function (e) {
@@ -21,8 +30,10 @@ const LocationMarker = () => {
     })
   }, [map])
 
-  return position === null ? null : (
-    <Marker position={position}>
+  if (position === null) return null
+
+  return (
+    <Marker position={position} icon={newIcon}>
       <Popup>
         You are here. <br />
       </Popup>
